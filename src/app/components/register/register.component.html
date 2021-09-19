@@ -1,0 +1,31 @@
+<div class="bg-image fadeIn first">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <h2 class="text-uppercase text-center mb-5">Hesap Oluştur</h2>
+            <div class="fadeIn first">
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fassets.stickpng.com%2Fthumbs%2F585e4bf3cb11b227491c339a.png&f=1&nofb=1" id="icon" alt="User Icon" />
+            </div>
+            <form [formGroup]="registerForm">
+                <input formControlName="firstName" type="text" id="firstname" class="fadeIn second" name="registered" placeholder="first name">
+                <input formControlName="lastName" type="text" id="lastname" class="fadeIn third" name="registered" placeholder="last name">
+                <input formControlName="email" type="text" id="login" class="fadeIn fourth " name="registered" placeholder="email">
+                <input formControlName="password" type="password" id="password" class="fadeIn fifth" name="registered" placeholder="password">
+
+                <div class="form-check d-flex justify-content-center mb-5 fadeIn sixth">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                    <label class="form-check-label " for="form2Example3g">
+                        <a href="#!" class="text-body "><u>Hizmet Şartları</u></a>'ndaki tüm ifadeleri kabul ediyorum.
+                    </label>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body fadeIn seventh" (click)="register()">Register</button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Zaten bir hesabınız var? <a href="login" class="fw-bold text-body"><u>Giriş Yap</u></a></p>
+
+            </form>
+
+        </div>
+    </div>
+</div>

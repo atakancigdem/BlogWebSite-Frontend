@@ -1,0 +1,26 @@
+<div class="bg-image fadeIn first">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="text-uppercase text-center mb-5">Giriş Yap</h2>
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fassets.stickpng.com%2Fthumbs%2F585e4bf3cb11b227491c339a.png&f=1&nofb=1" id="icon" alt="User Icon" />
+            </div>
+
+            <!-- Login Form -->
+            <form [formGroup]="loginForm">
+                <input formControlName="email" type="text" id="login" class="fadeIn second" name="login" placeholder="email">
+                <input formControlName="password" type="password" id="password" class="fadeIn third" name="login" placeholder="password">
+                <input type="submit" (click)="login()" class="fadeIn fourth" value="Log In">
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="#">Forgot Password?</a>
+                <p class="text-center text-muted mt-5 mb-0">Henüz üye değil misin? <a href="register" class="fw-bold text-body"><u>Kayıt Ol</u></a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
